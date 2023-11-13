@@ -19,6 +19,48 @@
     <!-- place navbar here -->
   </header>
   <main>
+    <form onsubmit="event.preventDefault();">
+    <h1> Student's notes</h1>
+    <div class="separation"></div>
+    <div class="corps-formulaire">
+         <div class="gauche">
+            <div class="groupe">
+                <label>Full Name</label>
+                <input autocomplete="off" class="fullName" type="text"/>
+                <i class="fa-solid fa-user" style="color: #0000ff;"></i>
+            </div>
+            <div class="groupe">
+                <label>Date og birth</label>
+                <input autocomplete="off" class="dateOfBirth" type="date"/>
+                <i class="fa-solid fa-envelope" style="color: #0000ff;"></i>
+            </div>
+            <div class="groupe">
+                <label>Gender</label>
+                <select name="Gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+                <i class="fa-solid fa-venus-double" style="color: #0000ff;"></i>
+            </div>
+            <div class="groupe">
+                <label>Task 01</label>
+                <input autocomplete="off" class="task1" type="text">
+                <i class="fa-solid fa-clipboard" style="color: #0000ff;"></i>
+            </div>
+            <div class="groupe">
+                <label>Task 02</label>
+                <input autocomplete="off" class="task2" type="text">
+                <i class="fa-solid fa-clipboard" style="color: #0000ff;"></i>
+            </div>
+            <div class="groupe">
+                <label>Task 03</label>
+                <input autocomplete="off" class="task3" type="text">
+                <i class="fa-solid fa-clipboard" style="color: #0000ff;"></i>
+            </div>
+         </div>
+         <div class="droite"></div>
+    </div>
+    </form>
 
   </main>
   <footer>
