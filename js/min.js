@@ -28,3 +28,22 @@ function validateFullName(fullName){
     //if the full name passes all of the validations rules , return null.
     return null;
 }
+
+//input date
+function validateDate(date){
+    //check if the date is required.
+if (!date){
+    return "date is required";
+}
+//check the format of the date.
+if(!/^d{4}-\d{2}$/ .test(date)){
+    return "date must be in the format YYYY/MM/DD";
+}
+//check the range of the date
+const today = new date();
+const minDate= new date ( today .getFullYear())
+
+}
+
+    
+}
