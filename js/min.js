@@ -54,7 +54,16 @@ submit.addEventListener('click', (event)=>{
 if (validateFullName(fullName.value) !== null){
     alert(validateFullName(fullName.value))
     return;
-}})
+}
+if (validateDate(dateOfBirth.value) !== null){
+    alert(validateDate(dateOfBirth.value))
+    return;
+}
+if (validateGender(gender.value) !== null){
+    alert(validateGender(gender.value))
+    return;
+}
+})
 
 
 function validateGender(gender){
