@@ -40,10 +40,22 @@ if(!/^d{4}-\d{2}$/ .test(date)){
     return "date must be in the format YYYY/MM/DD";
 }
 //check the range of the date
-const today = new date();
-const minDate= new date ( today .getFullYear())
+const today = new Date();
+const minDate = new Date ( today .getFullYear(), today.getMonth(), today.getDate());
+const maxDate = new Date(today.getFullYear() + 1, today.getMonth(), today.getDate());
 
+if(date < minDate || date > maxDate){
+    return "Date must be between today and one year from today.";
+}
+//if the date passes all the validation rules , return null.
+return null;
 }
 
-    
-}
+//Afficher les valeurs des champs.
+submit.addEventListener('click', (event)=>{
+    console.log(fullName.value)
+    console.log(dateOfBirth.value)
+    console.log(task1.value)
+    console.log(task2.value)
+    console.log(task3.value)
+})
