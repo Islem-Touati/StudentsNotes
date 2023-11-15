@@ -51,6 +51,7 @@ if(date < minDate || date > maxDate){
 return null;
 }
 
+
 //Afficher les valeurs des champs.
 submit.addEventListener('click', (event)=>{
     console.log(fullName.value)
@@ -59,3 +60,5 @@ submit.addEventListener('click', (event)=>{
     console.log(task2.value)
     console.log(task3.value)
 })
+
+
