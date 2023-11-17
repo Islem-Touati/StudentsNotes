@@ -49,7 +49,8 @@ if (date < minDate || date > maxDate){
     //if the date passes all the validation rules , return null.
 return null;
 }
-//Afficher les valeurs des champs.
+
+//Afficher les valeurs des champs(function calculer).
 submit.addEventListener('click', (event)=>{
 if (validateFullName(fullName.value) !== null){
     alert(validateFullName(fullName.value))
@@ -61,6 +62,18 @@ if (validateDate(dateOfBirth.value) !== null){
 }
 if (validateGender(gender.value) !== null){
     alert(validateGender(gender.value))
+    return;
+}
+if (validateMarksText(task1.value) !== null){
+    alert(validateMarksText(task1.value))
+    return;
+}
+if (validateMarksText(task2.value) !== null){
+    alert(validateMarksText(task2.value))
+    return;
+}
+if (validateMarksText(task3.value) !== null){
+    alert(validateMarksText(task3.value))
     return;
 }
 })
