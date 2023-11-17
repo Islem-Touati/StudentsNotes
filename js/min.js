@@ -94,6 +94,14 @@ $(total >= 10 ? "Succed" ; "Fail")
 ;
 })
 
+reset.addEventListener('click',() =>{
+    result.innerHTML = ''
+    fullName.value =''
+    dateOfBirth.value =''
+    task1.value =''
+    task2.value =''
+    task3.value =''
+})
 
 function validateGender(gender){
     //check if the gender is required.
